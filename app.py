@@ -1,5 +1,6 @@
 import streamlit as st
 from transformers import BertForSequenceClassification, BertTokenizer
+import torch  # Ensure PyTorch is imported
 
 # Load model and tokenizer from Hugging Face Model Hub
 model = BertForSequenceClassification.from_pretrained("omkars20/bert-fine-tuned-streamlit")
